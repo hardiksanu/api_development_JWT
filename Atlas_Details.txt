@@ -1,0 +1,11 @@
+Atlas user and password
+
+hardikpatel
+Hardik.90
+
+
+To connect my app.
+
+122.170.105.202/32
+
+mongodb+srv://hardikpatel:9033500133@cluster0.sfyspck.mongodb.net/<JWT>?retryWrites=true&w=majority
