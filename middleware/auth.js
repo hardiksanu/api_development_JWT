@@ -7,7 +7,7 @@ const config = process.env;
 
 const verifyToken = (req, res, next) => {
           const token = req.body.token || req.query.token || req.headers["x-access-token"];
-          // console.log(token);
+          console.log(token);
 
           if(!token) {
                     // console.log(token);
