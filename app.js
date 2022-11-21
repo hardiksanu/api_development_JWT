@@ -115,6 +115,8 @@ app.use("*", (req, res) => {
               statusCode: 404,
               message: "You reached a route that is not defined on this server",
             },
+
+            
           });
 });
 
