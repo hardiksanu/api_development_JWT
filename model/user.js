@@ -10,13 +10,6 @@ const userSchema = new mongoose.Schema({
           password: { type: String },
           token: { type: String },
 });
-/*
-userSchema.pre('save', async function (next) {
-          if(this.isModified('password')){
-                    this.password = await bcrypt.hash(this.password, 10);
-          }
-          next();
-});
-*/
+
 // we are creating a new collection(user)
 module.exports = mongoose.model("user", userSchema);

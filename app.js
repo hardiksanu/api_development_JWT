@@ -29,7 +29,7 @@ app.post("/register", async (req, res) => {
                     const oldUser = await User.findOne({ email });
 
                     if (oldUser) {
-                              return res.status(409).send("User is already exist, Please login again with different user");
+                              return res.status(409).send("Emailid is already exist, Please login again with other emailid");
                     };
                     //encypt the password.
                     encryptedPassword = await bcrypt.hash(password, 10);
@@ -116,7 +116,7 @@ app.use("*", (req, res) => {
               message: "You reached a route that is not defined on this server",
             },
 
-            
+
           });
 });
 
