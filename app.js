@@ -18,7 +18,7 @@ app.post("/register", async (req, res) => {
           try {
                     //get user input
                     const { first_name, last_name, email, password } = (req.body);
-                    console.log(req.body);
+                    // console.log(req.body);
 
                     //validate user input
                     if (!(first_name && last_name && email && password)) {
